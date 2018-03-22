@@ -29,6 +29,17 @@ body {
       rgba(40, 180, 133, 0.61)), 
    url(../img/hero.jpg);
    background-position: top;
-   background-size: cover;
+	background-size: cover;
+	position: relative;
    height: 95vh;
+}
+
+.logo-box {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+.logo {
+	height: 35px;
 }

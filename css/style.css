@@ -64,7 +64,7 @@ body {
 	-o-transform: translate(-50%, -50%);
 }
 
-.heading-primary {
+.heading-box__primary {
 	color: #fff;
 	backface-visibility: hidden;
 	margin-bottom: 6rem;	
@@ -72,7 +72,7 @@ body {
 	-webkit-backface-visibility: hidden;
 }
 
-.heading-primary--main {
+.heading-box__primary-main {
 	display: block;
 	font-size: 6rem;
 	font-weight: 400;
@@ -81,7 +81,7 @@ body {
 	-webkit-animation: moveInLeft 1s ease-out;
 }
 
-.heading-primary--sub {
+.heading-box__primary-sub {
 	display: block;
 	font-size: 2rem;
 	font-weight: 700;
@@ -174,8 +174,8 @@ body {
 	}
 }
 
-.heading-box--btn:link,
-.heading-box--btn:visited {
+.heading-box__btn:link,
+.heading-box__btn:visited {
 	border-radius: 10rem;
 	display: inline-block;
 	font-size: 1.6rem;
@@ -194,7 +194,7 @@ body {
 	-o-transition: all .2s;
 }
 
-.heading-box--btn:hover {
+.heading-box__btn:hover {
 	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 	transform: translateY(-.3rem);
 	-webkit-transform: translateY(-.3rem);
@@ -203,7 +203,7 @@ body {
 	-o-transform: translateY(-.3rem);
 }
 
-.heading-box--btn:active {
+.heading-box__btn:active {
 	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
 	transform: translateY(-.1rem);
 	-webkit-transform: translateY(-.1rem);
@@ -212,12 +212,12 @@ body {
 	-o-transform: translateY(-.1rem);
 }
 
-.heading-box--btn-white {
+.heading-box__btn-white {
 	background-color: #fff;
 	color: #777;
 }
 
-.heading-box--btn::after {
+.heading-box__btn::after {
 	border-radius: 10rem;
 	content: "";
 	display: inline-block;
@@ -238,11 +238,11 @@ body {
 	-o-transition: all .4s;
 }
 
-.heading-box--btn-white::after {
+.heading-box__btn-white::after {
 	background-color: #fff;
 }
 
-.heading-box--btn:hover::after {
+.heading-box__btn:hover::after {
 	opacity: 0;
 	transform: scaleX(1.4) scaleY(1.6);
 	-webkit-transform: scaleX(1.4) scaleY(1.6);
@@ -251,7 +251,7 @@ body {
 	-o-transform: scaleX(1.4) scaleY(1.6);
 }
 
-.heading-box--btn-animated {
+.heading-box__btn-animated {
 	animation: moveInButton .5s ease-out .1s;
 	animation-fill-mode: backwards;
 	-webkit-animation: moveInButton .5s ease-out .1s;

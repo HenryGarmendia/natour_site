@@ -42,18 +42,18 @@ body {
 	height: 95vh;
 }
 
-.logo-box {
+.header__logo-box {
 	position: absolute;
 	top: 4rem;
 	left: 4rem;
 }
 
-.logo-box--logo {
+.header__logo {
 	height: 3.5rem;
 }
 
-.heading-box {
-	position: absolute;/* center the heading-box technique*/
+.header__text-box {
+	position: absolute;/* center the header__text-box technique*/
 	top: 40%;
 	left: 50%;
 	text-align: center;
@@ -64,7 +64,7 @@ body {
 	-o-transform: translate(-50%, -50%);
 }
 
-.heading-box__primary {
+.heading-primary {
 	color: #fff;
 	backface-visibility: hidden;
 	margin-bottom: 6rem;	
@@ -72,7 +72,7 @@ body {
 	-webkit-backface-visibility: hidden;
 }
 
-.heading-box__primary-main {
+.heading-primary--main {
 	display: block;
 	font-size: 6rem;
 	font-weight: 400;
@@ -81,7 +81,7 @@ body {
 	-webkit-animation: moveInLeft 1s ease-out;
 }
 
-.heading-box__primary-sub {
+.heading-primary--sub {
 	display: block;
 	font-size: 2rem;
 	font-weight: 700;
@@ -174,8 +174,8 @@ body {
 	}
 }
 
-.heading-box__btn:link,
-.heading-box__btn:visited {
+.btn:link,
+.btn:visited {
 	border-radius: 10rem;
 	display: inline-block;
 	font-size: 1.6rem;
@@ -194,7 +194,7 @@ body {
 	-o-transition: all .2s;
 }
 
-.heading-box__btn:hover {
+.btn:hover {
 	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 	transform: translateY(-.3rem);
 	-webkit-transform: translateY(-.3rem);
@@ -203,7 +203,7 @@ body {
 	-o-transform: translateY(-.3rem);
 }
 
-.heading-box__btn:active {
+.btn:active {
 	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
 	transform: translateY(-.1rem);
 	-webkit-transform: translateY(-.1rem);
@@ -212,12 +212,12 @@ body {
 	-o-transform: translateY(-.1rem);
 }
 
-.heading-box__btn-white {
+.btn--white {
 	background-color: #fff;
 	color: #777;
 }
 
-.heading-box__btn::after {
+.btn::after {
 	border-radius: 10rem;
 	content: "";
 	display: inline-block;
@@ -238,11 +238,11 @@ body {
 	-o-transition: all .4s;
 }
 
-.heading-box__btn-white::after {
+.btn--white::after {
 	background-color: #fff;
 }
 
-.heading-box__btn:hover::after {
+.btn:hover::after {
 	opacity: 0;
 	transform: scaleX(1.4) scaleY(1.6);
 	-webkit-transform: scaleX(1.4) scaleY(1.6);
@@ -251,7 +251,7 @@ body {
 	-o-transform: scaleX(1.4) scaleY(1.6);
 }
 
-.heading-box__btn-animated {
+.btn--animated{
 	animation: moveInButton .5s ease-out .1s;
 	animation-fill-mode: backwards;
 	-webkit-animation: moveInButton .5s ease-out .1s;

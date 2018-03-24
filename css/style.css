@@ -66,9 +66,9 @@ body {
 
 .heading-primary {
 	color: #fff;
-	backface-visibility: hidden;
 	margin-bottom: 6rem;	
 	text-transform: uppercase;
+	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
 }
 
@@ -177,6 +177,10 @@ body {
 .btn:link,
 .btn:visited {
 	border-radius: 10rem;
+	-webkit-border-radius: 10rem;
+	-moz-border-radius: 10rem;
+	-ms-border-radius: 10rem;
+	-o-border-radius: 10rem;
 	display: inline-block;
 	font-size: 1.6rem;
 	padding: 1.5rem 4rem;
@@ -184,10 +188,6 @@ body {
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: all .2s;
-	-webkit-border-radius: 10rem;
-	-moz-border-radius: 10rem;
-	-ms-border-radius: 10rem;
-	-o-border-radius: 10rem;
 	-webkit-transition: all .2s;
 	-moz-transition: all .2s;
 	-ms-transition: all .2s;
@@ -219,6 +219,10 @@ body {
 
 .btn::after {
 	border-radius: 10rem;
+	-webkit-border-radius: 10rem;
+	-moz-border-radius: 10rem;
+	-ms-border-radius: 10rem;
+	-o-border-radius: 10rem;
 	content: "";
 	display: inline-block;
 	height: 100%;
@@ -226,16 +230,12 @@ body {
 	top: 0;
 	left: 0;
 	transition: all .4s;
-	width: 100%;
-	z-index: -1;
-	-webkit-border-radius: 10rem;
-	-moz-border-radius: 10rem;
-	-ms-border-radius: 10rem;
-	-o-border-radius: 10rem;
 	-webkit-transition: all .4s;
 	-moz-transition: all .4s;
 	-ms-transition: all .4s;
 	-o-transition: all .4s;
+	width: 100%;
+	z-index: -1;
 }
 
 .btn--white::after {
@@ -252,7 +252,7 @@ body {
 }
 
 .btn--animated{
-	animation: moveInButton .5s ease-out .1s;
+	animation: moveInButton .5s ease-out .75s;
+	-webkit-animation: moveInButton .5s ease-out .75s;
 	animation-fill-mode: backwards;
-	-webkit-animation: moveInButton .5s ease-out .1s;
 }

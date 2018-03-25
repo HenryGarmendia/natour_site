@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/HenryGarmendia/natour_site#readme",
   "dependencies": {
-    "jquery": "^3.3.1",
     "npm": "^5.8.0"
   },
   "devDependencies": {

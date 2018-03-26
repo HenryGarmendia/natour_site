@@ -131,8 +131,7 @@ body {
     -ms-transform: translate(0);
     -o-transform: translate(0); } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   border-radius: 10rem;
   -webkit-border-radius: 10rem;
   -moz-border-radius: 10rem;

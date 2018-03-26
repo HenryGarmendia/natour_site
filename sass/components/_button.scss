@@ -1,0 +1,87 @@
+.btn {
+   
+   &:link,
+   &:visited {
+      border-radius: 10rem;
+      -webkit-border-radius: 10rem;
+      -moz-border-radius: 10rem;
+      -ms-border-radius: 10rem;
+      -o-border-radius: 10rem;
+      display: inline-block;
+      font-size: 1.6rem;
+      padding: 1.5rem 4rem;
+      position: relative;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all .2s;
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -ms-transition: all .2s;
+      -o-transition: all .2s;
+
+   }
+      
+   &:hover {
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+      transform: translateY(-.3rem);
+      -webkit-transform: translateY(-.3rem);
+      -moz-transform: translateY(-.3rem);
+      -ms-transform: translateY(-.3rem);
+      -o-transform: translateY(-.3rem);
+
+      &::after {
+         opacity: 0;
+         transform: scaleX(1.4) scaleY(1.6);
+         -webkit-transform: scaleX(1.4) scaleY(1.6);
+         -moz-transform: scaleX(1.4) scaleY(1.6);
+         -ms-transform: scaleX(1.4) scaleY(1.6);
+         -o-transform: scaleX(1.4) scaleY(1.6);
+      }
+   }
+   
+   &:active {
+      box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
+      transform: translateY(-.1rem);
+      -webkit-transform: translateY(-.1rem);
+      -moz-transform: translateY(-.1rem);
+      -ms-transform: translateY(-.1rem);
+      -o-transform: translateY(-.1rem);
+   }
+   
+   &--white {
+      background-color: $color-white;
+      color: $color-grey-dark;
+
+      &::after {
+         background-color: $color-white;
+      }
+   }
+   
+   &::after {
+      border-radius: 10rem;
+      -webkit-border-radius: 10rem;
+      -moz-border-radius: 10rem;
+      -ms-border-radius: 10rem;
+      -o-border-radius: 10rem;
+      content: "";
+      display: inline-block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all .4s;
+      -webkit-transition: all .4s;
+      -moz-transition: all .4s;
+      -ms-transition: all .4s;
+      -o-transition: all .4s;
+      width: 100%;
+      z-index: -1;
+   }
+   
+   &--animated{
+      animation: moveInButton .5s ease-out .75s;
+      -webkit-animation: moveInButton .5s ease-out .75s;
+      animation-fill-mode: backwards;
+   }
+
+}

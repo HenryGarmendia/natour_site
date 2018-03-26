@@ -2,6 +2,10 @@ $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
+$color-grey-dark: #777;
+$color-white: #fff;
+$color-black: #000;
+
 *,
 *::after,
 *::before {
@@ -17,7 +21,7 @@ html {
 
 body {
 	box-sizing: border-box;
-   color: #777;
+   color: $color-grey-dark;
    font-family: "Lato", sans-serif;
    font-weight: 400;
    line-height: 1.7;
@@ -60,7 +64,7 @@ body {
 }
 
 .heading-primary {
-	color: #fff;
+	color: $color-white;
 	margin-bottom: 6rem;	
 	text-transform: uppercase;
 	backface-visibility: hidden;
@@ -191,7 +195,7 @@ body {
 }
 
 .btn:hover {
-	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 	transform: translateY(-.3rem);
 	-webkit-transform: translateY(-.3rem);
 	-moz-transform: translateY(-.3rem);
@@ -200,7 +204,7 @@ body {
 }
 
 .btn:active {
-	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+	box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
 	transform: translateY(-.1rem);
 	-webkit-transform: translateY(-.1rem);
 	-moz-transform: translateY(-.1rem);
@@ -209,8 +213,8 @@ body {
 }
 
 .btn--white {
-	background-color: #fff;
-	color: #777;
+	background-color: $color-white;
+	color: $color-grey-dark;
 }
 
 .btn::after {
@@ -235,7 +239,7 @@ body {
 }
 
 .btn--white::after {
-	background-color: #fff;
+	background-color: $color-white;
 }
 
 .btn:hover::after {

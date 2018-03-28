@@ -78,6 +78,9 @@ html {
   font-size: 62.5%; }
 
 body {
+  box-sizing: border-box; }
+
+body {
   box-sizing: border-box;
   color: #777;
   font-family: "Lato", sans-serif;
@@ -177,6 +180,26 @@ body {
   animation: moveInButton .5s ease-out .75s;
   -webkit-animation: moveInButton .5s ease-out .75s;
   animation-fill-mode: backwards; }
+
+.row {
+  background-color: #eee;
+  margin: 0 auto;
+  max-width: 114rem; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .row [class^="col-"] {
+    background-color: orangered;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
 
 .header {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);

@@ -6,9 +6,8 @@
 
    &__side {
       backface-visibility: hidden;
-      color: yellow;
-      font-size: 4rem;
-      text-align: center;
+      border-radius: 3px;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
       height: 50rem;
       position: absolute;
       top: 0;
@@ -21,8 +20,11 @@
       }
 
       &--back {
-         background-color: firebrick;
          transform: rotateY(180deg);
+
+         &-1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)
+         }
       }
    }
 

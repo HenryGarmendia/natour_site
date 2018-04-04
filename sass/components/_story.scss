@@ -2,7 +2,13 @@
    background-color: $color-white;
    border-radius: 3px;
    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+	 font-size: $default-font-size;
    margin: 0 auto;
    padding: 6rem;
    width: 75%;
+	 
+	 &__shape {
+	 	height: 15rem;
+		width: 15rem;
+	 }
 }

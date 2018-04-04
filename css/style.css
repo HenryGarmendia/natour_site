@@ -392,9 +392,13 @@ body {
   background-color: #fff;
   border-radius: 3px;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  font-size: 1.6rem;
   margin: 0 auto;
   padding: 6rem;
   width: 75%; }
+  .story__shape {
+    height: 15rem;
+    width: 15rem; }
 
 .row {
   margin: 0 auto;

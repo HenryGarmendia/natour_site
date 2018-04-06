@@ -151,6 +151,13 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem; }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
 .btn:link, .btn:visited {
   border-radius: 10rem;
   -webkit-border-radius: 10rem;
@@ -510,7 +517,8 @@ body {
 
 .section-stories {
   background-color: #f7f7f7;
-  padding: 15rem 0; }
+  padding: 15rem 0;
+  position: relative; }
 
 .row2 {
   background-color: rgba(238, 238, 238, 0.678);

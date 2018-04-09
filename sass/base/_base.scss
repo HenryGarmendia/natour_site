@@ -9,7 +9,11 @@
 html {
    /* root font-size 10px divided 16px = 0.625 */
    // this defines what 1rem is
-	font-size: 62.5%; 
+	font-size: 62.5%;
+
+	@include responsive(phone) {
+		font-size: 50%;
+	}
 }
 
 body {

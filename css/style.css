@@ -543,9 +543,29 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
+    border-radius: 3px;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-    width: 75%;
-    height: 50rem; }
+    display: table;
+    overflow: hidden;
+    width: 75%; }
+  .popup__left {
+    display: table-cell;
+    width: 33.333333%; }
+  .popup__right {
+    display: table-cell;
+    padding: 3rem 5rem;
+    vertical-align: middle;
+    width: 66.6666667; }
+  .popup__img {
+    display: block;
+    width: 99%; }
+  .popup__text {
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    font-size: 1.4rem;
+    hyphens: auto;
+    margin-bottom: 4rem; }
 
 .row {
   margin: 0 auto;
@@ -780,8 +800,7 @@ body {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
   background-size: 100%;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  height: 50rem; }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
   .book__form {
     padding: 6rem;
     width: 50%; }

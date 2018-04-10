@@ -53,6 +53,16 @@ body {
    transition: all .2s;
    text-transform: uppercase;
 
+    @include responsive(tab-port) {
+        font-size: 3rem;
+        
+    }
+    
+    @include responsive(phone) {
+        font-size: 2.5rem;
+
+    }
+
    &:hover {
       transform: skewY(-2deg) skewY(-5deg) scale(1.1);
       text-shadow: .5rem 1rem 2rem rgba($color-black, .2);

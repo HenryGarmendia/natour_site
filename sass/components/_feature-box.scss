@@ -6,14 +6,22 @@
    padding: 2.5rem;
    transition: transform .3s;
    text-align: center;
+   
+   @include responsive(tab-port) {
+       padding: 2rem;
+   }
 
    &__icon {
-      background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-      -webkit-background-clip: text;
-      color: transparent;
-      display: inline-block;
-      font-size: 6rem;
-      margin-bottom: .5rem;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block;
+        font-size: 6rem;
+        margin-bottom: .5rem;
+
+        @include responsive(tab-port) {
+            margin-bottom: 0;
+        }
    }
 
    &:hover {

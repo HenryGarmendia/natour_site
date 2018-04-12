@@ -5,11 +5,20 @@
         linear-gradient(to right bottom, 
         rgba($color-primary-light, 0.61), 
         rgba($color-primary-dark, 0.61)), 
-    url(../img/hero.jpg);
+    url(../img/hero-small.jpg);
     background-position: top;
     background-size: cover;
     position: relative;
     height: 95vh;
+
+    // RESPONSIVE IMAGES IN CSS METHOD
+    @media (min-resolution: 192dpi) {
+      background-image: 
+        linear-gradient(to right bottom, 
+        rgba($color-primary-light, 0.61), 
+        rgba($color-primary-dark, 0.61)), 
+      url(../img/hero.jpg);
+    }
 
     @include responsive(phone) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);

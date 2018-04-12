@@ -2,7 +2,7 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     background-image: 
-        linear-gradient(to right bottom, 
+    linear-gradient(to right bottom, 
         rgba($color-primary-light, 0.61), 
         rgba($color-primary-dark, 0.61)), 
     url(../img/hero-small.jpg);
@@ -12,38 +12,38 @@
     height: 95vh;
 
     // RESPONSIVE IMAGES IN CSS METHOD
-    @media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px) {
-      background-image: 
+    @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+        background-image: 
         linear-gradient(to right bottom, 
-        rgba($color-secondary-light, 0.61), 
-        rgba($color-secondary-dark, 0.61)), 
-      url(../img/hero.jpg);
+            rgba($color-secondary-light, 0.61), 
+            rgba($color-secondary-dark, 0.61)), 
+        url(../img/hero.jpg);
     }
 
     @include responsive(phone) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }
-   
-   &__logo-box {
-      position: absolute;
-      top: 4rem;
-      left: 4rem;
-   }
 
-   &__logo {
-      height: 3.5rem;
-   }
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
 
-   &__text-box {
-      position: absolute;/* center the header__text-box technique*/
-      top: 40%;
-      left: 50%;
-      text-align: center;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-   }
+    &__logo {
+        height: 3.5rem;
+    }
+
+    &__text-box {
+        position: absolute;/* center the header__text-box technique*/
+        top: 40%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
 }

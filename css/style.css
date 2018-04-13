@@ -115,6 +115,10 @@ body {
     body {
       padding: 0; } }
 
+::selection {
+  background-color: #55c57a;
+  color: #fff; }
+
 body {
   box-sizing: border-box;
   color: #777;
